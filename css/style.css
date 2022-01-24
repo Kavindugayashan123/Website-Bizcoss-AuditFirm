@@ -8029,7 +8029,7 @@ h1, h2, h3, h4, h5,
   width: 100%; }
   .wrap .bg-wrap {
     background: #3a2e5e;
-    background: #413c69;
+    background: #0d0d0f;
     padding: 0;
     position: relative;
     z-index: 0; }
@@ -8042,7 +8042,7 @@ h1, h2, h3, h4, h5,
       height: 0;
       border-style: solid;
       border-width: 0 0 40px 40px;
-      border-color: transparent transparent #413c69 transparent;
+      border-color: transparent transparent #0d0d0f transparent;
       z-index: -1; }
     .wrap .bg-wrap:before {
       position: absolute;
@@ -8053,7 +8053,7 @@ h1, h2, h3, h4, h5,
       height: 0;
       border-style: solid;
       border-width: 40px 40px 0 0;
-      border-color: #413c69 transparent transparent transparent;
+      border-color: #0d0d0f transparent transparent transparent;
       z-index: -1; }
     @media (max-width: 991.98px) {
       .wrap .bg-wrap:before {
@@ -9684,3 +9684,10 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+/* ******** */
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+  }

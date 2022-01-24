@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<style>
+	.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+  }
+</style>
 <html lang="en">
   <head>
     <title>Accounting - Free Bootstrap 4 Template by Colorlib</title>
@@ -48,9 +55,11 @@
 				</div>
 			</div>
 		</div>
+	
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
 	    	<a class="navbar-brand" href="index.html">Bizcoss</a>
+			<div id="logo" class="align-items-center justify-content-center"><img src="images/bizcosslogo.jpg"></div>
 	    	<form action="#" class="searchform order-sm-start order-lg-last">
           <div class="form-group d-flex">
             <input type="text" class="form-control pl-3" placeholder="Search">
@@ -72,6 +81,7 @@
 	      </div>
 	    </div>
 	  </nav>
+
     <!-- END nav -->
     <div class="hero-wrap">
 	    <div class="home-slider owl-carousel">
@@ -83,7 +93,7 @@
 		          	<div class="text w-100 text-center">
 		          		<h2>We Business Grow</h2>
 			            <h1 class="mb-4">We Help You Businesses Innovate and Grow</h1>
-			            <p><a href="#" class="btn btn-white">Connect with us</a></p>
+			            <p><a href="https://m.facebook.com/Bizcoss-111758896930218/" class="btn btn-white">Connect with us</a></p>
 		            </div>
 		          </div>
 		        </div>
@@ -218,7 +228,7 @@
     	</div>
     </section>
 
-    <section class="ftco-counter bg-light ftco-no-pt" id="section-counter">
+    <!-- <section class="ftco-counter bg-light ftco-no-pt" id="section-counter">
     	<div class="container">
 				<div class="row">
           <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
@@ -263,7 +273,7 @@
           </div>
         </div>
     	</div>
-    </section>
+    </section> -->
 
     <section class="ftco-section testimony-section bg-light">
     	<div class="overlay"></div>
@@ -725,5 +735,34 @@
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
     
+  <script>
+	window.onscroll = function() {myFunction()};
+	
+	var navbar = document.getElementById("ftco-navbar");
+	var sticky = navbar.offsetTop;
+	
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky")
+	  } else {
+		navbar.classList.remove("sticky");
+	  }
+	}
+	</script>
+
+	<!-- <script>
+		// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+		window.onscroll = function() {scrollFunction()};
+		
+		function scrollFunction() {
+		  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+			document.getElementById("ftco-navbar").style.padding = "30px 10px";
+			document.getElementById("logo").style.fontSize = "25px";
+		  } else {
+			document.getElementById("ftco-navbar").style.padding = "80px 10px";
+			document.getElementById("logo").style.fontSize = "35px";
+		  }
+		}
+		</script> -->
   </body>
 </html>
