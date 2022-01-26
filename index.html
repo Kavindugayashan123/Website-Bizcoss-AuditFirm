@@ -1,11 +1,51 @@
 <!DOCTYPE html>
-<style>
-	.sticky {
-	position: fixed;
-	top: 0;
-	width: 100%;
-  }
-</style>
+<!-- <style>
+	.container {
+	  position: relative;
+	  width: 50%;
+	}
+	
+	.image {
+	  display: block;
+	  width: 100%;
+	  height: auto;
+	}
+	
+	.overlay {
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  height: 100%;
+	  width: 100%;
+	  opacity: 0;
+	  transition: .5s ease;
+	  background-color: #008CBA;
+	}
+	
+	.container:hover .overlay {
+	  opacity: 1;
+	}
+	
+	.text {
+	  color: white;
+	  font-size: 20px;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  -webkit-transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	  text-align: center;
+	}
+	.left {
+  left: 0;
+  background-color: #111;
+} 
+
+
+	</style>-->
 <html lang="en">
   <head>
     <title>Accounting - Free Bootstrap 4 Template by Colorlib</title>
@@ -24,6 +64,7 @@
 
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="scss/style.scss"> -->
   </head>
   <body>
 
@@ -58,24 +99,24 @@
 	
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	    	<a class="navbar-brand" href="index.html">Bizcoss</a>
-			<div id="logo" class="align-items-center justify-content-center"><img src="images/bizcosslogo.jpg"></div>
+	    	<a id="brandName" class="navbar-brand" href="index.html">Bizcoss</a>
+			<div id="logo" class="align-items-center justify-content-center"><img src="images/Illustration-logo.jpg" width="85px" height="80px"></div>
 	    	<form action="#" class="searchform order-sm-start order-lg-last">
-          <div class="form-group d-flex">
+          <!-- <div class="form-group d-flex">
             <input type="text" class="form-control pl-3" placeholder="Search">
             <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
-          </div>
+          </div> -->
         </form>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="fa fa-bars"></span> Menu
 	      </button>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav m-auto">
+	        <ul id="menuItems" class="navbar-nav m-auto">
 	        	<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
 	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	        	<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-	          <li class="nav-item"><a href="cases.html" class="nav-link">Case Study</a></li>
-	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+	           <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+	          <!-- <li class="nav-item"><a href="cases.html" class="nav-link">Case Study</a></li>
+	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>  -->
 	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
@@ -85,7 +126,7 @@
     <!-- END nav -->
     <div class="hero-wrap">
 	    <div class="home-slider owl-carousel">
-	      <div class="slider-item" style="background-image:url(images/bg_1.jpg);">
+	      <div class="slider-item" style="background-image:url(images/res_9.jpg);">
 	      	<div class="overlay"></div>
 	        <div class="container">
 	          <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -93,14 +134,14 @@
 		          	<div class="text w-100 text-center">
 		          		<h2>We Business Grow</h2>
 			            <h1 class="mb-4">We Help You Businesses Innovate and Grow</h1>
-			            <p><a href="https://m.facebook.com/Bizcoss-111758896930218/" class="btn btn-white">Connect with us</a></p>
+			            <p><a href="https://m.facebook.com/Bizcoss-111758896930218/" target="_blank" class="btn btn-white">Connect with us</a></p>
 		            </div>
 		          </div>
 		        </div>
 	        </div>
 	      </div>
 
-	      <div class="slider-item" style="background-image:url(images/bg_2.jpg);">
+	      <div class="slider-item" style="background-image:url(images/res_2.jpg);">
 	      	<div class="overlay"></div>
 	        <div class="container">
 	          <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -108,14 +149,14 @@
 		          	<div class="text w-100 text-center">
 		          		<h2>We Support Business</h2>
 			            <h1 class="mb-4">The Best Business Support</h1>
-			            <p><a href="#" class="btn btn-white">Connect with us</a></p>
+			            <p><a href="https://m.facebook.com/Bizcoss-111758896930218/" target="_blank" class="btn btn-white">Connect with us</a></p>
 		            </div>
 		          </div>
 		        </div>
 	        </div>
 	      </div>
 
-	      <div class="slider-item" style="background-image:url(images/bg_3.jpg);">
+	      <div class="slider-item" style="background-image:url(images/res_10.jpg);">
 	      	<div class="overlay"></div>
 	        <div class="container">
 	          <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -123,7 +164,7 @@
 		          	<div class="text w-100 text-center">
 		          		<h2>We Give Advice</h2>
 			            <h1 class="mb-4">Expert Financial Advice</h1>
-			            <p><a href="#" class="btn btn-white">Connect with us</a></p>
+			            <p><a href="https://m.facebook.com/Bizcoss-111758896930218/" target="_blank" class="btn btn-white">Connect with us</a></p>
 		            </div>
 		          </div>
 		        </div>
@@ -131,12 +172,12 @@
 	      </div>
 	    </div>
 	  </div>
-   	
+
     <section class="ftco-section ftco-no-pt bg-light">
     	<div class="container">
     		<div class="row d-flex no-gutters">
     			<div class="col-md-6 d-flex">
-    				<div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-center mb-4 mb-sm-0" style="background-image:url(images/about.jpg);">
+    				<div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-center mb-4 mb-sm-0" style="background-image:url(images/res_11.jpg);">
     				</div>
     			</div>
     			<div class="col-md-6 pl-md-5 py-md-5">
@@ -176,15 +217,34 @@
         </div>
     	</div>
     </section>
+<!-- 
+	<section>
+		<div class="container">
+			<div class="splitimage">
+
+			</div>
+		  <img src="images/image_5.jpg" height="200px" width="200" alt="Avatar" class="image">
+		  <div class="overlay">
+			<img src="images/image_4.jpg" height="200px" width="200" alt="Avatar" class="image">
+		  </div>
+		</div>
+	  </section> -->
+
+	  <!-- <div class="tiles"><a class="tile" href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/216995/1.jpg"/>
+		<div class="details"><span class="title">Lorem Ipsum Dolor</span><span class="info">Quisque vel felis lectus donec vitae dapibus magna</span></div></a><a class="tile" href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/216995/2.jpg"/>
+		<div class="details"><span class="title">Lorem Ipsum Dolor</span><span class="info">Quisque vel felis lectus donec vitae dapibus magna</span></div></a><a class="tile" href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/216995/3.jpg"/>
+		<div class="details"><span class="title">Lorem Ipsum Dolor</span><span class="info">Quisque vel felis lectus donec vitae dapibus magna</span></div></a><a class="tile" href="#"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/216995/4.jpg"/>
+		<div class="details"><span class="title">Lorem Ipsum Dolor</span><span class="info">Quisque vel felis lectus donec vitae dapibus magna</span></div></a></div> -->
+	
 
     <section class="ftco-section bg-light ftco-no-pt">
     	<div class="container">
     		<div class="row">
           <div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
             <div class="d-block">
-              <div class="icon d-flex mr-2">
+              <!-- <div class="icon d-flex mr-2">
             		<span class="flaticon-accounting-1"></span>
-              </div>
+              </div> -->
               <div class="media-body">
                 <h3 class="heading">Accounting</h3>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
@@ -193,9 +253,9 @@
           </div>
           <div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
             <div class="d-block">
-              <div class="icon d-flex mr-2">
+              <!-- <div class="icon d-flex mr-2">
             		<span class="flaticon-tax"></span>
-              </div>
+              </div> -->
               <div class="media-body">
                 <h3 class="heading">Tax, Compliance &amp; Payroll</h3>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
@@ -204,9 +264,9 @@
           </div>
           <div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
             <div class="d-block">
-              <div class="icon d-flex mr-2">
+              <!-- <div class="icon d-flex mr-2">
             		<span class="flaticon-loan"></span>
-              </div>
+              </div> -->
               <div class="media-body">
                 <h3 class="heading">Financial Services</h3>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
@@ -215,9 +275,9 @@
           </div>
           <div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
             <div class="d-block">
-              <div class="icon d-flex mr-2">
+              <!-- <div class="icon d-flex mr-2">
             		<span class="flaticon-budget"></span>
-              </div>
+              </div> -->
               <div class="media-body">
                 <h3 class="heading">Growth &amp; Funding Access</h3>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
@@ -275,6 +335,7 @@
     	</div>
     </section> -->
 
+	<div id="services">
     <section class="ftco-section testimony-section bg-light">
     	<div class="overlay"></div>
       <div class="container">
@@ -367,8 +428,9 @@
         </div>
       </div>
     </section>
+</div>
 
-    <section class="ftco-section ftco-no-pt bg-light ftco-faqs">
+    <!-- <section class="ftco-section ftco-no-pt bg-light ftco-faqs">
     	<div class="container">
     		<div class="row">
     			<div class="col-lg-6">
@@ -471,9 +533,9 @@
 	        </div>
         </div>
     	</div>
-    </section>
+    </section> -->
 
-    <section class="ftco-section">
+    <!-- <section class="ftco-section">
       <div class="container">
         <div class="row justify-content-center pb-5 mb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
@@ -526,10 +588,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 		
 
-    <section class="ftco-section ftco-no-pb ftco-no-pt bg-secondary">
+    <!-- <section class="ftco-section ftco-no-pb ftco-no-pt bg-secondary">
       <div class="container py-5">
     		<div class="row">
           <div class="col-md-7 d-flex align-items-center">
@@ -545,9 +607,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="ftco-section bg-light">
+    <!-- <section class="ftco-section bg-light">
     	<div class="container">
     		<div class="row justify-content-center pb-5 mb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
@@ -630,7 +692,24 @@
 	        </div>
 	      </div>
     	</div>
-    </section>
+    </section> -->
+
+	<!-- <a href="/en_us/consumer-products-retail" class="topicLink-slide" data-image="https://assets.ey.com/content/dam/ey-sites/ey-com/en_us/topics/consumer-products/ey-happy-couple-paying-bills.jpg" data-thumb="https://assets.ey.com/content/dam/ey-sites/ey-com/en_us/topics/consumer-products/ey-happy-couple-paying-bills.jpg" data-index="84" style="left: 2100%; background-image: none;"> 
+		<div class="description"> 
+		  <h3 class="topic-name">Consumer Products &amp; Retail</h3>  -->
+		 <!-- <div class="featured"> 
+		  <span class="topic-featured">Featured:</span> 
+		  <span class="article-title">US Future Consumer Index 8: Do consumers drive the market or does the market drive consumers?</span> 
+		 </div>  -->
+		 <!-- <div class="topic-discover"> 
+		  <span class="text">Discover</span> 
+		  <div class="topicLink-arrow topicLink-arrowRight small">
+		   <div class="topicLink-arrowHitbox"></div>
+		  </div> 
+		 </div>  -->
+		<!-- </div> <script class="topicLink-renditions skip" data-src="https://assets.ey.com/content/dam/ey-sites/ey-com/en_us/topics/consumer-products/ey-happy-couple-paying-bills.jpg.rendition.450.300.jpg" data-bgset="[https://assets.ey.com/content/dam/ey-sites/ey-com/en_us/topics/consumer-products/ey-happy-couple-paying-bills.jpg.rendition.1200.1800.jpg, (min-width: 0px) and (max-width: 599px) and (-webkit-min-device-pixel-ratio: 2.0)],[https://assets.ey.com/content/dam/ey-sites/ey-com/en_us/topics/consumer-products/ey-happy-couple-paying-bills.jpg.rendition.600.900.jpg, (min-width: 0px) and (max-width: 599px)],[https://assets.ey.com/content/dam/ey-sites/ey-com/en_us/topics/consumer-products/ey-happy-couple-paying-bills.jpg.rendition.1800.1200.jpg, (min-width: 600px) and (max-width: 899px) and (-webkit-min-device-pixel-ratio: 2.0)],[https://assets.ey.com/content/dam/ey-sites/ey-com/en_us/topics/consumer-products/ey-happy-couple-paying-bills.jpg.rendition.900.600.jpg, (min-width: 600px) and (max-width: 899px)],[https://assets.ey.com/content/dam/ey-sites/ey-com/en_us/topics/consumer-products/ey-happy-couple-paying-bills.jpg.rendition.3840.2560.jpg, (min-width: 900px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2.0)],[https://assets.ey.com/content/dam/ey-sites/ey-com/en_us/topics/consumer-products/ey-happy-couple-paying-bills.jpg.rendition.1200.800.jpg, (min-width: 900px) and (max-width: 1199px)],[https://assets.ey.com/content/dam/ey-sites/ey-com/en_us/topics/consumer-products/ey-happy-couple-paying-bills.jpg.rendition.3840.2560.jpg, (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.0)],[https://assets.ey.com/content/dam/ey-sites/ey-com/en_us/topics/consumer-products/ey-happy-couple-paying-bills.jpg.rendition.1800.1200.jpg, (min-width: 1200px) and (max-width: 1799px)],[https://assets.ey.com/content/dam/ey-sites/ey-com/en_us/topics/consumer-products/ey-happy-couple-paying-bills.jpg.rendition.3840.2560.jpg, (min-width: 1800px)]"></script> </a>  -->
+	
+	
 
     <footer class="footer">
 			<div class="container-fluid px-lg-5">
@@ -642,7 +721,7 @@
 								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
 								<ul class="ftco-footer-social p-0">
 		              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-twitter"></span></a></li>
-		              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
+		              <li class="ftco-animate"><a href="https://m.facebook.com/Bizcoss-111758896930218/" target="_blank" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
 		              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa fa-instagram"></span></a></li>
 		            </ul>
 							</div>
@@ -736,6 +815,32 @@
   <script src="js/main.js"></script>
     
   <script>
+	// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+	window.onscroll = function() {scrollFunction()};
+	var navbar = document.getElementById("ftco-navbar");
+	var sticky = navbar.offsetTop;
+	
+	function scrollFunction() {
+	  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 || window.pageYOffset >= sticky) {
+		document.getElementById("ftco-navbar").style.height = "70px"; 
+		document.getElementById("brandName").style.fontSize = "25px"; 
+		document.getElementById("menuItems").style.fontSize = "25px"; 
+		navbar.classList.add("sticky");
+		document.getElementById("logo").style.display = "none";
+
+	  } else {
+		document.getElementById("ftco-navbar").style.height = "90px";
+		document.getElementById("brandName").style.fontSize = "35px";
+		document.getElementById("menuItems").style.fontSize = "35px"; 
+		navbar.classList.remove("sticky");
+		document.getElementById("logo").style.display = "block";
+	  }
+	}
+	</script>
+
+
+
+  <!-- <script>
 	window.onscroll = function() {myFunction()};
 	
 	var navbar = document.getElementById("ftco-navbar");
@@ -748,7 +853,7 @@
 		navbar.classList.remove("sticky");
 	  }
 	}
-	</script>
+	</script> -->
 
 	<!-- <script>
 		// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size

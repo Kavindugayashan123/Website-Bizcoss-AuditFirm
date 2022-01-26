@@ -50,7 +50,8 @@
 		</div>
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	    	<a class="navbar-brand" href="index.html">Accounting</a>
+			<a id="brandName" class="navbar-brand" href="index.html">Bizcoss</a>
+			<div id="logo" class="align-items-center justify-content-center"><img src="images/Illustration-logo.jpg" width="85px" height="80px"></div>
 	    	<form action="#" class="searchform order-sm-start order-lg-last">
           <div class="form-group d-flex">
             <input type="text" class="form-control pl-3" placeholder="Search">
@@ -65,15 +66,15 @@
 	        	<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
 	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
 	        	<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-	          <li class="nav-item"><a href="cases.html" class="nav-link">Case Study</a></li>
-	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+	          <!-- <li class="nav-item"><a href="cases.html" class="nav-link">Case Study</a></li>
+	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
 	          <li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
 	    </div>
 	  </nav>
     <!-- END nav -->
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/res_15.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-end">
@@ -179,7 +180,7 @@
     	</div>
     </section>
 
-   	<div id="map" class="map"></div>
+   	<!-- <div id="map" class="map"></div>
 
     <section class="ftco-section ftco-no-pb ftco-no-pt bg-secondary">
       <div class="container py-5">
@@ -197,7 +198,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <footer class="footer">
 			<div class="container-fluid px-lg-5">
@@ -209,7 +210,7 @@
 								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
 								<ul class="ftco-footer-social p-0">
 		              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-twitter"></span></a></li>
-		              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
+					  <li class="ftco-animate"><a href="https://m.facebook.com/Bizcoss-111758896930218/" target="_blank" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
 		              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa fa-instagram"></span></a></li>
 		            </ul>
 							</div>
@@ -301,6 +302,26 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-    
+  <script>
+	// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+	window.onscroll = function() {scrollFunction()};
+	var navbar = document.getElementById("ftco-navbar");
+	var sticky = navbar.offsetTop;
+	
+	function scrollFunction() {
+	  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 || window.pageYOffset >= sticky) {
+		document.getElementById("ftco-navbar").style.height = "70px";  
+		document.getElementById("brandName").style.fontSize = "25px";
+		navbar.classList.add("sticky");
+		document.getElementById("logo").style.display = "none";
+
+	  } else {
+		document.getElementById("ftco-navbar").style.height = "90px"; 
+		document.getElementById("brandName").style.fontSize = "35px";
+		navbar.classList.remove("sticky");
+		document.getElementById("logo").style.display = "block";
+	  }
+	}
+	</script>
   </body>
 </html>
