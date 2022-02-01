@@ -3508,6 +3508,10 @@ input[type="button"].btn-block {
   -ms-flex-align: center;
   align-items: center; }
 
+  .nav-logo{
+    flex-direction: column;
+  }
+
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
@@ -3634,14 +3638,15 @@ input[type="button"].btn-block {
     .navbar-expand-lg > .container-fluid {
       -ms-flex-wrap: nowrap;
       flex-wrap: nowrap; }
-    .navbar-expand-lg .navbar-collapse {
+    .navbar-expand-lg .navbar-collapse{
       display: -webkit-box !important;
       display: -ms-flexbox !important;
       display: flex !important;
       -ms-flex-preferred-size: auto;
       flex-basis: auto; }
     .navbar-expand-lg .navbar-toggler {
-      display: none; } }
+      display: none; }
+ }
 
 @media (max-width: 1199.98px) {
   .navbar-expand-xl > .container,
@@ -8100,7 +8105,11 @@ h1, h2, h3, h4, h5,
       background: #fff;
       position: relative;
       top: 0;
-      padding: 10px 15px; } }
+      padding: 10px 15px; }
+    .biz-logo{
+      margin-top: -14px;
+    } 
+  }
   .ftco-navbar-light .navbar-brand {
     color: #000000;
     font-weight: 800;
@@ -8115,7 +8124,7 @@ h1, h2, h3, h4, h5,
         margin-bottom: 20px; } }
   @media (max-width: 991.98px) {
     .ftco-navbar-light .navbar-nav {
-      padding-bottom: 10px; } }
+      padding-bottom: 10px;} }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
     font-size: 14px;
     padding-top: 1.5rem;
@@ -8156,9 +8165,12 @@ h1, h2, h3, h4, h5,
         padding-left: 0;
         padding-right: 0;
         padding-top: .9rem;
-        padding-bottom: .9rem; }
+        padding-bottom: .9rem; 
+        color: white;}
         .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-          color: #fff; } }
+         color: #fff;
+        }
+     }
     @media (max-width: 767.98px) {
       .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
         border-bottom: 1px solid rgba(0, 0, 0, 0.05); } }
@@ -8204,7 +8216,10 @@ h1, h2, h3, h4, h5,
       transform: scaleX(1); }
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-        color: #000000; }
+        /* color: #000000; */
+        color: #1c7430;
+       }
+
         .ftco-navbar-light .navbar-nav > .nav-item.active > a:before {
           display: none; } }
   .ftco-navbar-light .navbar-toggler {
