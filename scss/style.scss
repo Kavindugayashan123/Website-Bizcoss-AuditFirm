@@ -27,9 +27,9 @@ $secondary: #8fd0d2;
     transition:         all $transition ease;
 }
 
-html {
-	// overflow-x: hidden;
-}
+// html {
+// 	// overflow-x: hidden;
+// }
 body {
 	font-family: $font-primary;
 	background: $white;
@@ -988,16 +988,14 @@ textarea.form-control {
 //ABOUT SINGLE
 
 .about-author{
-	img{
-	}
+	// img{
+	// }
 	.desc{
 		h3{
 			font-size: 24px;
 		}
 	}
-	.bio{
-
-	}
+	// .bio{}
 }
 
 
@@ -1113,9 +1111,9 @@ textarea.form-control {
 	a{
 		color: $primary;
 	}
-	p{
-		// color: rgba(0,0,0,.3);
-	}
+	// p{
+	// 	// color: rgba(0,0,0,.3);
+	// }
 	.footer-heading{
 		font-size: 18px;
 		margin-bottom: 30px;
@@ -1562,7 +1560,7 @@ textarea.form-control {
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
-  -webkit-backface-visibility: hidden;
+//   -webkit-backface-visibility: hidden;
   -webkit-transition: all 0.3s ease-out; 
   -moz-transition: all 0.3s ease-out; 
   -o-transition: all 0.3s ease-out; 
