@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Accounting - Free Bootstrap 4 Template by Colorlib</title>
+    <title>Bizcoss</title>
 	<script src="https://smtpjs.com/v3/smtp.js"></script> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -66,9 +66,7 @@
 	        <ul class="navbar-nav m-auto">
 	        	<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
 	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	        	<li class="nav-item"><a href="index.html.#services" class="nav-link">Services</a></li>
-	          <!-- <li class="nav-item"><a href="cases.html" class="nav-link">Case Study</a></li>
-	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
+	        	<li class="nav-item"><a href="index.html#services" class="nav-link">Services</a></li>
 	          <li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
 	        </ul>
 			<div id="saplogo" class="nav-logo"><img src="images/1200px-SAP_2011_logo.svg.png" width="65px" height="40px"> </div>
@@ -104,7 +102,8 @@
 					            Your message was sent, thank you!
 					      		</div>
 								  <div  id="Formcontact" >
-									<form method="POST" action="mailto:kavindugayashan408@gmail.com" enctype="text/plain" name="contact_form" class="contactForm">
+									<form action="https://formsubmit.co/kavindugayashan408@gmail.com"  method="POST" class="contactForm">
+										<input type="hidden" name="_subject" value="New submit from Bizcoss.com">
 											<div class="row">
 												<div class="col-md-6">
 													<div class="form-group">
@@ -127,12 +126,13 @@
 												<div class="col-md-12">
 													<div class="form-group">
 														<label class="label" for="#">Message</label>
-														<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea><br>
+										 				<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea><br>
 													</div>
 												</div>
+												<input type="hidden" name="_next" value="http://bizcoss.com/">
 												<div class="col-md-12">
-													<div class="form-group">s
-														<input type="submit"  onclick="sendEmail()" value="Send Message" class="btn btn-primary">
+													<div class="form-group">
+														<input type="submit" value="Send Message" class="btn btn-primary">
 														<div class="submitting"></div>
 													</div>
 												</div>
