@@ -9965,6 +9965,10 @@ html {
   -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
+@media (max-width: 767.98px) {
+  .flip-box-front  {
+    font-size: small !important; } }
+
 
 .flip-box:hover .flip-box-front {
   -ms-transform: rotateY(-180deg);
@@ -9974,6 +9978,7 @@ html {
   -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
+
 
 .flip-box-back {
   position: absolute;
@@ -10019,11 +10024,17 @@ html {
   font-size: 34px;
   font-weight: 650 !important
 }
+@media (max-width: 767.98px) {
+  .flip-box-header{
+    font-size: 26px; } }
 
 .flip-box p {
   font-size: 20px;
   line-height: 1.5em;
 }
+@media (max-width: 767.98px) {
+  .flip-box p {
+    font-size: small !important; } }
 
 .flip-box-img {
   margin-top: 25px;
