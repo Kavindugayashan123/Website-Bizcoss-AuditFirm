@@ -352,8 +352,8 @@
     <section class="ftco-section testimony-section bg-light">
 		<div  id="fullsection" class="testimony-sectionTwo">
 		<div class="overlay"></div>
-		<div  class="box-container" >
-			<div id="one" class="box-item boxes">
+		<div  class="box-container owl-carousel " >
+			<div id="one" class="box-item boxes">			
 			  <div class="flip-box">
 				<div class="flip-box-front text-center" style="background-image: url('https://s25.postimg.cc/frbd9towf/cta-2.png');">
 				  <div class="inner color-white">
@@ -373,7 +373,7 @@
 				  </div>
 				</div>
 			  </div>
-			</div>
+			</div> 
 			<div id="two" class="box-item boxes" >
 			  <div class="flip-box">
 				<div class="flip-box-front text-center" style="background-image: url('https://s25.postimg.cc/hj4c4qnov/cta-3.png');">
@@ -451,7 +451,7 @@
         </div>
         <div class="row ftco-animate">
           <div class="col-md-12">
-            <div class="carousel-testimony owl-carousel ftco-owl">
+            <div class="carousel-testimony owl-carousel ftco-owl"> 
               <div class="item">
                 <div class="testimony-wrap py-4">
                 	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
@@ -527,7 +527,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+             </div> 
           </div>
         </div>
       </div> -->
@@ -754,6 +754,17 @@ $("#four").mouseover(function() {
   $("#fullsection").css("-o-transition", "opacity 1s ease-in-out");
   $("#fullsection").css("-ms-transition", "opacity 1s ease-in-out");
 });
+
+$(".box-container").owlCarousel({
+	 loop: true,
+	 autoplay: true,
+	 autoplayTimout: 2000,
+	 autoplayHoverpause: true,
+	 items : 4,
+	 
+    
+ });
+
 
 	</script>
 
