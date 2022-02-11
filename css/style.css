@@ -10018,6 +10018,11 @@ html {
   -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
   top: 50%;
 }
+@media (max-width: 767.98px){
+  .flip-box .inner  {
+    font-size: 26px;
+    padding: 0;
+}}
 
 .flip-box-header {
   color: #fff;
@@ -10026,7 +10031,21 @@ html {
 }
 @media (max-width: 767.98px) {
   .flip-box-header{
-    font-size: 26px; } }
+    font-size: 15px; 
+   } }
+   
+    @media (min-width: 767.98px) {
+      .flip-box-header{
+        font-size: 20px;
+        margin-left: -30px;
+       } }
+       @media (min-width: 1117px) {
+        .flip-box-header{
+          font-size: 25px;
+          margin-left: -30px;
+         } }
+ 
+
 
 .flip-box p {
   font-size: 20px;
@@ -10034,10 +10053,27 @@ html {
 }
 @media (max-width: 767.98px) {
   .flip-box p {
-    font-size: small !important; } }
+    font-size: small !important;
+     } }
 
+    @media (min-width: 767.98px) {
+      .flip-box p{
+        font-size: small !important;
+       } }
+       @media (min-width: 1117px) {
+        .flip-box p{
+          font-size: 14px !important;
+         } }
+         @media (min-width: 1460px) {
+          .flip-box p{
+            font-size: 17px !important;
+           } }
+   
+ 
 .flip-box-img {
   margin-top: 25px;
+  width: 22% !important;
+  display: initial !important;
 }
 
 .flip-box-button {
