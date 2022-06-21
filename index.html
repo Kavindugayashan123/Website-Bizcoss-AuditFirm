@@ -33,6 +33,21 @@
       box-shadow: 0 0 10px #ccc;
 	  
     } 
+	@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
 </style>
 <html lang="en">
   <head>
@@ -234,10 +249,7 @@
 			<ul>
     		<div class="row">
           <div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
-            <div class="d-block">
-              <!-- <div class="icon d-flex mr-2">
-            		<span class="flaticon-accounting-1"></span>
-              </div> -->			 
+            <div class="d-block">			 
               <div class="media-body">
                <li> <h3 class="heading">Advice to Project Financing</h3> </li>
 			   <li><h3 class="heading">Bookkeeping</h3> </li>	
@@ -301,58 +313,11 @@
     	</div>
     </section>
 
-    <!-- <section class="ftco-counter bg-light ftco-no-pt" id="section-counter">
-    	<div class="container">
-				<div class="row">
-          <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18 text-center">
-              <div class="text">
-                <strong class="number" data-number="50">0</strong>
-              </div>
-              <div class="text">
-              	<span>Years of Experienced</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18 text-center">
-              <div class="text">
-                <strong class="number" data-number="8500">0</strong>
-              </div>
-              <div class="text">
-              	<span>Cases Completed</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18 text-center">
-              <div class="text">
-                <strong class="number" data-number="20">0</strong>
-              </div>
-              <div class="text">
-              	<span>Awards Won</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18 text-center">
-              <div class="text">
-                <strong class="number" data-number="50">0</strong>
-              </div>
-              <div class="text">
-              	<span>Expert Consultant</span>
-              </div>
-            </div>
-          </div>
-        </div>
-    	</div>
-    </section> -->
-
 	<div id="services">
     <section class="ftco-section testimony-section bg-light">
 		<div  id="fullsection" class="testimony-sectionTwo">
 		<div class="overlay"></div>
-		<div  class="box-container owl-carousel " >
+		<!-- <div  class="box-container owl-carousel" >
 			<div id="one" class="box-item boxes">			
 			  <div class="flip-box">
 				<div class="flip-box-front text-center" style="background-image: url('https://s25.postimg.cc/frbd9towf/cta-2.png');">
@@ -364,16 +329,14 @@
 				</div>
 				<div class="flip-box-back text-center" style="background-image: url('https://s25.postimg.cc/frbd9towf/cta-2.png');">
 				  <div class="inner color-white">
-					<!-- <h3 class="flip-box-header">Custom Domains</h3>
-					<p>A short sentence describing this callout is.</p> -->
 					<p style="font-size: large;">The most basic of all accounting functions that involves maintaining accurate and
 						updated records of all financial activity. <br> This includes records of bank, tax, payroll,
 						puchase and sales which essential to regulatory compliance.</p>
-					<!-- <button class="flip-box-button">Learn More</button> -->
 				  </div>
 				</div>
 			  </div>
 			</div> 
+
 			<div id="two" class="box-item boxes" >
 			  <div class="flip-box">
 				<div class="flip-box-front text-center" style="background-image: url('https://s25.postimg.cc/hj4c4qnov/cta-3.png');">
@@ -385,12 +348,9 @@
 				</div>
 				<div class="flip-box-back text-center" style="background-image: url('https://s25.postimg.cc/hj4c4qnov/cta-3.png');">
 				  <div class="inner color-white">
-					<!-- <h3 class="flip-box-header">Never Sleeps</h3>
-					<p>A short sentence describing this callout is.</p> -->
 					<p style="font-size: 18px;">Compliance with State & Local financial regulations is extremely important to every business. <br>
 					   Our team will work with you on a regular basis to ensure that your business activities, records, 
 					   and processes are fully in compliance with all applicable regulations.</p>
-					<!-- <button class="flip-box-button">Learn More</button> -->
 				  </div>
 				</div>
 			  </div>
@@ -406,9 +366,6 @@
 				  </div>
 				  <div class="flip-box-back text-center" style="background-image: url(images/card-05.jpg);">
 					<div class="inner color-white">
-					  <!-- <h3 class="flip-box-header">Dedicated</h3>
-					  <p>A short sentence describing this callout is.</p>
-					  <button class="flip-box-button">Learn More</button> -->
 					  <p style="font-size: medium;">A website has its own target audience and attract them with a perfect content. <br>
 						It should contain keywords(specific business-related terms, which Users will mostly use for services or
 						products)aimed towards improving a website's SEO.<br> Our mastered Content Writing Service will upgrade
@@ -428,9 +385,6 @@
 				  </div>
 				  <div class="flip-box-back text-center" style="background-image: url('https://s25.postimg.cc/l2q9ujy4f/cta-4.png');">
 					<div class="inner color-white">
-					  <!-- <h3 class="flip-box-header">Dedicated</h3>
-					  <p>A short sentence describing this callout is.</p>
-					  <button class="flip-box-button">Learn More</button> -->
 					  <p style="font-size: large;">Crafting a strong business proposal requires a lot of time, effort, planning, commitment, and a special set of skills 
 						  such as research, analysis, and writing. <br> Business proposal writers have helped clients of the many industries 
 						  by writing, editing, and optimizing different types of business proposals</p>
@@ -438,10 +392,10 @@
 				  </div>
 				</div>
 			  </div>
-		  </div>
+		  </div> -->
 
 
-    	<!-- <div class="overlay"></div>
+    	<div class="overlay"></div>
       <div class="container">
         <div class="row justify-content-center pb-5 mb-3">
           <div class="col-md-7 heading-section heading-section-white text-center ftco-animate">
@@ -456,13 +410,15 @@
                 <div class="testimony-wrap py-4">
                 	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
                   <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="mb-4">The most basic of all accounting functions that involves maintaining accurate and
+						updated records of all financial activity. This includes records of bank, tax, payroll,
+						puchase and sales which essential to regulatory compliance.</p>
                     <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+                    	<!-- <div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
                     	<div class="pl-3">
 		                    <p class="name"></p>
 		                    <span class="position">Marketing Manager</span>
-		                  </div>
+		                  </div> -->
 	                  </div>
                   </div>
                 </div>
@@ -471,13 +427,15 @@
                 <div class="testimony-wrap py-4">
                 	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
                   <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="mb-4">Compliance with State & Local financial regulations is extremely important to every business.
+						Our team will work with you on a regular basis to ensure that your business activities, records, 
+						and processes are fully in compliance with all applicable regulations.</p>
                     <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+                    	<!-- <div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
                     	<div class="pl-3">
 		                    <p class="name"></p>
 		                    <span class="position">Marketing Manager</span>
-		                  </div>
+		                  </div> -->
 	                  </div>
                   </div>
                 </div>
@@ -486,13 +444,16 @@
                 <div class="testimony-wrap py-4">
                 	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
                   <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="mb-4">A website has its own target audience and attract them with a perfect content.
+						It should contain keywords(specific business-related terms, which Users will mostly use for services or
+						products)aimed towards improving a website's SEO. Our mastered Content Writing Service will upgrade
+						 your website in order to achieve your relevant business goals.</p>
                     <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
+                    	<!-- <div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
                     	<div class="pl-3">
 		                    <p class="name"></p>
 		                    <span class="position">Marketing Manager</span>
-		                  </div>
+		                  </div> -->
 	                  </div>
                   </div>
                 </div>
@@ -501,36 +462,38 @@
                 <div class="testimony-wrap py-4">
                 	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
                   <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="mb-4">Crafting a strong business proposal requires a lot of time, effort, planning, commitment, and a special set of skills 
+						such as research, analysis, and writing. Business proposal writers have helped clients of the many industries 
+						by writing, editing, and optimizing different types of business proposals</p>
                     <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+                    	<!-- <div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
                     	<div class="pl-3">
 		                    <p class="name"></p>
 		                    <span class="position">Marketing Manager</span>
-		                  </div>
+		                  </div> -->
 	                  </div>
                   </div>
                 </div>
               </div>
-              <div class="item">
+              <!-- <div class="item">
                 <div class="testimony-wrap py-4">
                 	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
                   <div class="text">
                     <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                     <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+                    	<!-- <div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
                     	<div class="pl-3">
 		                    <p class="name"></p>
-		                    <span class="position">Marketing Manager</span>
+		                    <span class="position">Marketing Manager</span> -->
 		                  </div>
 	                  </div>
                   </div>
-                </div>
+                </div> -->
               </div>
              </div> 
           </div>
         </div>
-      </div> -->
+      </div>
 	</div>
     </section>
 </div>
@@ -650,7 +613,6 @@
   <script src="js/main.js"></script>
     
   <script>
-	// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
 	window.onscroll = function() {scrollFunction()};
 	var navbar = document.getElementById("ftco-navbar");
 	var sticky = navbar.offsetTop;
@@ -678,24 +640,7 @@
 		document.getElementById("tallylogo").style.display = "block";
 	  }
 	}
-
-// 	$('#one').hover(function(){
-// 		//document.body.style.backgroundImage = "url('https://image.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?w=740')";
-// 	//	document.getElementById("fullsection").className = "hover-bg-2";
-// 	//$('.fullsection').css('background-image','url()') ;
-//        $('.testimony-sectionTwo').fadeOut(300);
-// });
-
-// $('#two').hover(function(){
-//  //	document.getElementById("fullsection").className = "hover-bg-1";
-// //	$('.fullsection').css('background-image','url(https://image.freepik.com/free-photo/aerial-view-business-team_53876-124515.jpg?w=740)') ;
-// 	// background: url('https://image.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?w=740');
-//     $('.testimony-sectionThree').fadeOut(300);
-// });
-// $('#two').mouseleave(function(){
-//   $('.hover-bg-2').fadeIn(300);
-// });
-
+ 
 $("#one").mouseover(function() {
   $("#fullsection").css("background", "url(https://image.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?w=740)");
   //$("#fullsection").css("background", "url(https://images.pexels.com/photos/243971/pexels-photo-243971.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)");
@@ -712,16 +657,11 @@ $("#one").mouseover(function() {
   $("#fullsection").css("-moz-transition", "opacity 1s ease-in-out");
   $("#fullsection").css("-o-transition", "opacity 5s ease-in-out");
   $("#fullsection").css("-ms-transition", "opacity 5s ease-in-out");
-
-
 });
 
 $("#two").mouseover(function() {
+	
   $("#fullsection").css("background", "url(https://image.freepik.com/free-photo/greenery-product-background_53876-90824.jpg?w=900)");
-//     $("#fullsection").css("-webkit-background-size", "cover");
-//    $("#fullsection").css("-moz-background-size", "cover");
-//    $("#fullsection").css("-o-background-size", "cover");
-
    $("#fullsection").css("-webkit-transition", "all .9s ease");
     $("#fullsection").css("transition", "all .9s ease");
   $("#fullsection").css("-moz-transition", "opacity 1s ease-in-out");
@@ -731,10 +671,6 @@ $("#two").mouseover(function() {
 
 $("#three").mouseover(function() {
 	$("#fullsection").css("background", "url(https://images.unsplash.com/photo-1511836536898-6d6f1b8f6948?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)");
-//     $("#fullsection").css("-webkit-background-size", "cover");
-//   $("#fullsection").css("-moz-background-size", "cover");
-//   $("#fullsection").css("-o-background-size", "cover");
-
   $("#fullsection").css("-webkit-transition", "all .9s ease");
     $("#fullsection").css("transition", "all .9s ease");
   $("#fullsection").css("-moz-transition", "opacity 1s ease-in-out");
@@ -743,11 +679,8 @@ $("#three").mouseover(function() {
 });
 
 $("#four").mouseover(function() {
-	$("#fullsection").css("background", "url(https://images.pexels.com/photos/302743/pexels-photo-302743.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)");
-//     $("#fullsection").css("-webkit-background-size", "cover");
-//   $("#fullsection").css("-moz-background-size", "cover");
-//   $("#fullsection").css("-o-background-size", "cover");
-
+	//$("#fullsection").css("background", "url(https://images.pexels.com/photos/302743/pexels-photo-302743.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)");
+$("#fullsection").css("background", "url(https://cdn.pixabay.com/photo/2017/09/06/11/41/clean-2721103_960_720.jpg)");
   $("#fullsection").css("-webkit-transition", "all .9s ease");
     $("#fullsection").css("transition", "all .9s ease");
   $("#fullsection").css("-moz-transition", "opacity 1s ease-in-out");
@@ -755,49 +688,24 @@ $("#four").mouseover(function() {
   $("#fullsection").css("-ms-transition", "opacity 1s ease-in-out");
 });
 
+
 $(".box-container").owlCarousel({
+
 	 loop: true,
 	 autoplay: true,
 	 autoplayTimout: 2000,
+	items: 4,
 	 autoplayHoverpause: true,
-	 items : 4,
 	 
-    
  });
 
+//  if(window.matchMedia("(max-width: 767.98px)"))
+// 	 {
 
+// 		$(".box-container").add({
+// 			items: 1
+// 		})
+// 	 }
 	</script>
-
-
-
-  <!-- <script>
-	window.onscroll = function() {myFunction()};
-	
-	var navbar = document.getElementById("ftco-navbar");
-	var sticky = navbar.offsetTop;
-	
-	function myFunction() {
-	  if (window.pageYOffset >= sticky) {
-		navbar.classList.add("sticky")
-	  } else {
-		navbar.classList.remove("sticky");
-	  }
-	}
-	</script> -->
-
-	<!-- <script>
-		// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-		window.onscroll = function() {scrollFunction()};
-		
-		function scrollFunction() {
-		  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-			document.getElementById("ftco-navbar").style.padding = "30px 10px";
-			document.getElementById("logo").style.fontSize = "25px";
-		  } else {
-			document.getElementById("ftco-navbar").style.padding = "80px 10px";
-			document.getElementById("logo").style.fontSize = "35px";
-		  }
-		}
-		</script> -->
   </body>
 </html>

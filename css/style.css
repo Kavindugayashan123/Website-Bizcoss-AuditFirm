@@ -10031,7 +10031,7 @@ html {
 }
 @media (max-width: 767.98px) {
   .flip-box-header{
-    font-size: 15px; 
+    font-size: 10px; 
    } }
    
     @media (min-width: 767.98px) {
@@ -10053,7 +10053,8 @@ html {
 }
 @media (max-width: 767.98px) {
   .flip-box p {
-    font-size: small !important;
+    font-size: xx-small !important;
+
      } }
 
     @media (min-width: 767.98px) {
